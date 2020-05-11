@@ -24,9 +24,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwc-mC-MpA">
-                                <rect key="frame" x="179" y="678" width="57" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwc-mC-MpA">
+                                <rect key="frame" x="20" y="552" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Dbt-Up-iUY"/>
+                                </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startOrStopButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VNn-25-zAa"/>
@@ -57,8 +59,11 @@
                         <constraints>
                             <constraint firstItem="o8A-bf-1DQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2A6-5t-QMn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o8A-bf-1DQ" secondAttribute="trailing" constant="20" id="3JF-WF-qSl"/>
+                            <constraint firstItem="qwc-mC-MpA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ac3-Pp-mb5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qwc-mC-MpA" secondAttribute="trailing" constant="20" id="CLW-6v-YBF"/>
                             <constraint firstItem="8Lc-P7-AMt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CMZ-p5-QBV"/>
                             <constraint firstItem="8Lc-P7-AMt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wxe-NC-Hsa"/>
+                            <constraint firstItem="qwc-mC-MpA" firstAttribute="top" secondItem="8Lc-P7-AMt" secondAttribute="bottom" constant="40" id="cAP-U4-1VN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Lc-P7-AMt" secondAttribute="trailing" constant="20" id="ko4-11-3aT"/>
                             <constraint firstItem="o8A-bf-1DQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lmc-LH-RWs"/>
                             <constraint firstItem="o8A-bf-1DQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mcq-mY-DPq"/>
